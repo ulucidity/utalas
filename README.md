@@ -1,2 +1,2 @@
 # utalas
-utalas -- utalas
+utalas -- u talas
