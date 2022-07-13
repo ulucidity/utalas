@@ -16,14 +16,14 @@
 #   File: libutalas.pri
 #
 # Author: $author$
-#   Date: 4/1/2022, 5/11/2022
+#   Date: 4/1/2022, 7/11/2022
 #
 # generic QtCreator project .pri file for framework utalas static library libutalas
 ########################################################################
 
 ########################################################################
 # libutalas
-XOS_LIB_UTALAS_VERSION_BUILD_DATE = 5/11/2022 #$$system(~/bin/utility/tdate)
+XOS_LIB_UTALAS_VERSION_BUILD_DATE = 7/11/2022 #$$system(~/bin/utility/tdate)
 
 # libutalas TARGET
 #
@@ -58,14 +58,12 @@ XOS_LIB_UTALAS_VERSION_BUILD_DATE=$${XOS_LIB_UTALAS_VERSION_BUILD_DATE} \
 # libutalas HEADERS
 #
 libutalas_HEADERS += \
-$${TALAS_SRC}/xos/lib/talas/version.hpp \
 $${UTALAS_SRC}/xos/lib/utalas/version.hpp \
-$${UTALAS_SRC}/xos/lib/utalas/versions.hpp \
 
 # libutalas SOURCES
 #
 libutalas_SOURCES += \
-$${UTALAS_SRC}/xos/lib/utalas/versions.cpp \
+$${UTALAS_SRC}/xos/lib/utalas/version.cpp \
 
 ########################################################################
 

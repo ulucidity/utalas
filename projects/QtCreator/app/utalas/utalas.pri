@@ -16,7 +16,7 @@
 #   File: utalas.pri
 #
 # Author: $author$
-#   Date: 5/11/2022
+#   Date: 7/11/2022
 #
 # generic QtCreator project .pri file for framework utalas executable utalas
 ########################################################################
@@ -68,14 +68,13 @@ $${UTALAS_SRC}/xos/app/console/utalas/version/main.cpp \
 # utalas_exe FRAMEWORKS
 #
 utalas_exe_FRAMEWORKS += \
-$${utalas_FRAMEWORKS} \
+$${utalas_rsa_FRAMEWORKS} \
 
 # utalas_exe LIBS
 #
 utalas_exe_LIBS += \
-$${utalas_LIBS} \
+$${utalas_rsa_LIBS} \
 
 ########################################################################
 # NO Qt
 QT -= gui core
-

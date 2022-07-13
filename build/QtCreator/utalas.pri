@@ -16,12 +16,12 @@
 #   File: utalas.pri
 #
 # Author: $author$
-#   Date: 4/1/2022, 7/5/2022
+#   Date: 4/1/2022, 7/11/2022
 #
 # build specific QtCreator project .pri file for framework utalas
 ########################################################################
 # Repository Depends: vmachinae
-# Depends: ubn;ump;urostra;unadir;ufila;ucrono;ucifra;urete;ustara;umedusade
+# Depends: ubn;ump;urostra;unadir;ufila;ucrono;ucifra;urete;ustara
 
 contains(BUILD_OS,Uname) {
 UNAME = $$system(uname)
@@ -247,34 +247,11 @@ build_ustara_FRAMEWORKS += \
 build_ustara_LIBS += \
 
 ########################################################################
-# umedusade
-#
-# pkg-config --cflags --libs umedusade
-#
-
-# build umedusade INCLUDEPATH
-#
-build_umedusade_INCLUDEPATH += \
-
-# build umedusade DEFINES
-#
-build_umedusade_DEFINES += \
-
-# build umedusade FRAMEWORKS
-#
-build_umedusade_FRAMEWORKS += \
-
-# build umedusade LIBS
-#
-build_umedusade_LIBS += \
-
-########################################################################
 # utalas
 
 # build utalas INCLUDEPATH
 #
 build_utalas_INCLUDEPATH += \
-$${build_umedusade_INCLUDEPATH} \
 $${build_ustara_INCLUDEPATH} \
 $${build_urete_INCLUDEPATH} \
 $${build_ucifra_INCLUDEPATH} \
@@ -298,13 +275,11 @@ $${build_ucrono_DEFINES} \
 $${build_ucifra_DEFINES} \
 $${build_urete_DEFINES} \
 $${build_ustara_DEFINES} \
-$${build_umedusade_DEFINES} \
 
 
 # build utalas FRAMEWORKS
 #
 build_utalas_FRAMEWORKS += \
-$${build_umedusade_FRAMEWORKS} \
 $${build_ustara_FRAMEWORKS} \
 $${build_urete_FRAMEWORKS} \
 $${build_ucifra_FRAMEWORKS} \
@@ -319,7 +294,6 @@ $${build_ubn_FRAMEWORKS} \
 # build utalas LIBS
 #
 build_utalas_LIBS += \
-$${build_umedusade_LIBS} \
 $${build_ustara_LIBS} \
 $${build_urete_LIBS} \
 $${build_ucifra_LIBS} \

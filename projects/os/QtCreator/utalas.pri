@@ -16,12 +16,12 @@
 #   File: utalas.pri
 #
 # Author: $author$
-#   Date: 4/1/2022, 7/5/2022
+#   Date: 4/1/2022, 7/11/2022
 #
 # os specific QtCreator project .pri file for framework utalas
 ########################################################################
 # Repository Depends: vmachinae
-# Depends: ubn;ump;urostra;unadir;ufila;ucrono;ucifra;urete;ustara;umedusade
+# Depends: ubn;ump;urostra;unadir;ufila;ucrono;ucifra;urete;ustara
 
 UNAME = $$system(uname)
 
@@ -281,30 +281,6 @@ USTARA_LIB_NAME = $${USTARA_NAME}
 ustara_LIBS += \
 -L$${USTARA_LIB}/lib$${USTARA_LIB_NAME} \
 -l$${USTARA_LIB_NAME} \
-
-
-########################################################################
-# umedusade
-UMEDUSADE_THIRDPARTY_PKG_MAKE_BLD = $${UMEDUSADE_THIRDPARTY_PKG}/build/$${UTALAS_BUILD}/$${BUILD_CONFIG}
-UMEDUSADE_THIRDPARTY_PRJ_MAKE_BLD = $${OTHER_BLD}/$${UMEDUSADE_THIRDPARTY_PRJ}/build/$${UTALAS_BUILD}/$${BUILD_CONFIG}
-UMEDUSADE_THIRDPARTY_PKG_BLD = $${UMEDUSADE_THIRDPARTY_PKG}/build/$${UTALAS_BUILD}/QtCreator/$${BUILD_CONFIG}
-UMEDUSADE_THIRDPARTY_PRJ_BLD = $${OTHER_BLD}/$${UMEDUSADE_THIRDPARTY_PRJ}/build/$${UTALAS_BUILD}/QtCreator/$${BUILD_CONFIG}
-UMEDUSADE_PKG_BLD = $${OTHER_BLD}/$${UMEDUSADE_PKG}/build/$${UTALAS_BUILD}/QtCreator/$${BUILD_CONFIG}
-UMEDUSADE_PRJ_BLD = $${OTHER_BLD}/$${UMEDUSADE_PRJ}/build/$${UTALAS_BUILD}/QtCreator/$${BUILD_CONFIG}
-#UMEDUSADE_LIB = $${UMEDUSADE_THIRDPARTY_PKG_MAKE_BLD}/lib
-#UMEDUSADE_LIB = $${UMEDUSADE_THIRDPARTY_PRJ_MAKE_BLD}/lib
-#UMEDUSADE_LIB = $${UMEDUSADE_THIRDPARTY_PKG_BLD}/lib
-#UMEDUSADE_LIB = $${UMEDUSADE_THIRDPARTY_PRJ_BLD}/lib
-UMEDUSADE_LIB = $${UMEDUSADE_PKG_BLD}/lib
-#UMEDUSADE_LIB = $${UMEDUSADE_PRJ_BLD}/lib
-#UMEDUSADE_LIB = $${UTALAS_LIB}
-UMEDUSADE_LIB_NAME = $${UMEDUSADE_NAME}
-
-# umedusade LIBS
-#
-umedusade_LIBS += \
--L$${UMEDUSADE_LIB}/lib$${UMEDUSADE_LIB_NAME} \
--l$${UMEDUSADE_LIB_NAME} \
 
 
 ########################################################################
